@@ -10,10 +10,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route
-          path="${process.env.PUBLIC_URL}/movie/:id"
+          path={`${process.env.PUBLIC_URL}/movie/:id`}
           element={<Detail />}
         />
-        <Route path="${process.env.PUBLIC_URL}/" element={<Home />} />
+        <Route path={`${process.env.PUBLIC_URL}/`} element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
